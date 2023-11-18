@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="laralink" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- Page Title -->
+  <title>CypherSol</title>
+  <!-- Favicon Icon -->
+  <link rel="icon" href="/static/static/image/logo-2.png" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/static/static/new/css/animate.css" />
+  <link rel="stylesheet" href="/static/static/new/css/bootstrao.min.css" />
+  <link rel="stylesheet" href="/static/static/new/css/flaticon.css" />
+  <link rel="stylesheet" href="/static/static/new/css/fontawsome.min.css" />
+  <link rel="stylesheet" href="/static/static/new/css/owlcarousel.min.css" />
+  <link rel="stylesheet" href="/static/static/new/css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <!-- Google Fonts -->
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  
+  
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    @media (max-width: 768px) {
+      .login-button {
+        margin-top: -35px;
+
+      }
+
+      .quote {
+        font-size: 70px;
+        margin-left: 10px;
+        margin-top: 100px;
+        margin-bottom: 162px;
+      }
+    }
+
+    @media (min-width: 767px) and (max-width: 990px) {
+      .login-button {
+        margin-top: -35px;
+
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .quotes {
+        margin-top: 100px;
+        margin-bottom: 200px;
+      }
+    }
+
+    .quotes {
+      text-align: center;
+    }
+
+
+    .quote h1 {
+      font-size: 60px;
+      margin-left: 10px;
+      margin-top: -50px;
+    }
+  </style>
+
+</head>
+
+<body class="st-blue-color">
+  <!-- {% for message in messages %}
+  <div class="mt-2 alert alert-{% if message.tags %}{{ message.tags }}{% endif %} alert-dismissible" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {% comment %} <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li> {% endcomment %}
+    {% endfor %} -->
+
+    <header id="header" class="fixed-top d-flex align-items-center ustify-content-between">
+      <div class="logo" style="padding-bottom: 0px;">
+        <!-- Uncomment below if you prefer to use an text logo -->
+        <!-- <h1><a href="index.html">NewBiz</a></h1> -->
+        <a href="index.html"><img src="/static/static/image/logo-1.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <div class="container d-flex justify-content-between" style="margin-left:40px">
+
+
+        <!-- <div class="logo" style="padding-top:10px">
+        Uncomment below if you prefer to use an text logo 
+         <h1><a href="index.html">NewBiz</a></h1>
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>  -->
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html"><b>Home</b></a></li>
+            <li><a class="nav-link scrollto" href="team.html"><b>Team</b></a></li>
+            <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
+            <li><a class="nav-link scrollto" href="about_us.html"><b>About</b></a></li>
+            <li class="dropdown"><a href="#"><b>Solutions</b><i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <!-- <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+                <li><a href="#Login">Tax Professionals</a></li>
+                <li><a href="#Login">Direct Selling Agent</a></li>
+                <li><a href="#Login">Financier</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto active" href="contact.html"><b>Contact</b></a></li>
+          </ul>
+          <!-- <button type="button" class="btn btn-primary btn-sm" style="width:100px;height:50px">Login</button> -->
+        </nav><!-- .navbar -->
+        <div class="dropdown login-button">
+          <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+            style="width: 100px; height: 40px">
+            <b>Login</b>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="{% url 'login' %}">Login As Tax Professionals</a>
+            <a class="dropdown-item" href="{% url 'DSA_login' %}">Login As DSA</a>
+          </div>
+        </div>
+
+
+      </div>
+    </header><!-- End Header -->
+
+  <main id="main" data-aos="fade" data-aos-delay="1500">
+
+    <!-- ======= End Page Header ======= -->
+    <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>Contact</h2>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Header -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="row justify-content-center display" style="margin-right: 10px; margin-left: -10px;">
+
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Location:</h4>
+                <p>CYPHERSOL FINTECH INDIA PVT LTD, 106-108, Shree Raj Enclave Chs ltd, Near Seven Square Academy, Mumbai-401107.</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>support@cyphersol.in</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
+              <div>
+                <h4>Call:</h4>
+                <p>18002107788</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+
+          <div class="col-lg-12">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="form-group mt-3">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="First Name" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Last Name" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>
+              <div class="form-group mt-3">
+                <input type="number" class="form-control" name="number" id="contact" placeholder="Contact No." required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Address" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Submit</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+            <div class="col-md-12">
+              Copyright © <span class="dynamic-year">
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </span>
+              <a target="_blank" href="#">CypherSol</a>, All rights reserved.
+            </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
