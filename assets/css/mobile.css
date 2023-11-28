@@ -1,0 +1,128 @@
+/* Mobile Navigation */
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    color: #007bff;
+    font-size: 32px;
+    line-height: 0;
+    margin-right: 10px;
+    margin-top: -20px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .navbar {
+    padding: 0;
+    z-index: 9997;
+  }
+
+  .navbar ul {
+    display: none;
+    position: absolute;
+    inset: 60px 20px 20px 20px;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 6px;
+    background-color: var(--nav-mobile-background-color);
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+    box-shadow: 0px 0px 30px rgba(var(--default-color-rgb), 0.1);
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    color: #1e2442;
+    padding: 10px 20px;
+    font-family: var(--nav-font);
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navbar a i,
+  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+  }
+
+  .navbar a i:hover,
+  .navbar a:focus i:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus {
+    color: #007bff;
+  }
+
+  .navbar .active i,
+  .navbar .active:focus i {
+    background-color: var(--primary-color);
+    color: #007bff;
+    transform: rotate(180deg);
+  }
+
+  .navbar .dropdown ul,
+  .navbar .megamenu ul {
+    position: static;
+    display: none;
+    z-index: 99;
+    padding: 10px 0;
+    margin: 10px 20px;
+    background-color: var(--nav-dropdown-background-color);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar .dropdown ul ul,
+  .navbar .megamenu ul ul {
+    background-color: white;
+  }
+
+  .navbar .dropdown>.dropdown-active,
+  .navbar .megamenu>.dropdown-active {
+    display: block;
+    background-color: white;
+  }
+
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+
+  .mobile-nav-active .mobile-nav-toggle {
+    color: #007bff;
+    position: absolute;
+    font-size: 32px;
+    top: 15px;
+    right: 15px;
+    margin-right: 0;
+    z-index: 9999;
+    margin-top: 10px;
+  }
+
+  .mobile-nav-active .navbar {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    background: white;
+    transition: 0.3s;
+  }
+
+  .mobile-nav-active .navbar>ul {
+    display: block;
+  }
+}

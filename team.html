@@ -34,6 +34,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/mobile.css" rel="stylesheet">
   <style>
     @media (max-width: 768px) {
       .login-button {
@@ -136,10 +137,12 @@
             <b>Login</b>
           </button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="{% url 'login' %}">Login As Tax Professionals</a>
-            <a class="dropdown-item" href="{% url 'DSA_login' %}">Login As DSA</a>
+            <a class="dropdown-item" href="{% url 'login' %}">Login Tax Professionals</a>
+            <a class="dropdown-item" href="{% url 'DSA_login' %}">Login DSA</a>
           </div>
         </div>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 
 
       </div>
@@ -159,176 +162,16 @@
     </div>
 
     <!-- ======= End Page Header ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" >
+    <section id="team" class="team">
 
-          <div class="container">
-    
-            <div class="row align-items-center">
-    
-              <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
-                <h3 style="color: aliceblue; font-size: 70px;">Team</h3>
-                <p style="font-style: italic;">
-                  Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results. 
-                </p>
-              </div>
-    
-              <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
-    
-                <div class="swiper card">
-                  <template class="swiper-config">
-                    {
-                    "loop": true,
-                    "speed" : 600,
-                    "autoplay": {
-                    "delay": 5000
-                    },
-                    "slidesPerView": "auto",
-                    "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                    }
-                    }
-                  </template>
-                  <div class="swiper-wrapper">
-    
-                    <div class="swiper-slide">
-                      <div class="testimonial-item">
-                        <div class="d-flex">
-                          <img src="assets/img/testimonials/Imran.jpg" class="testimonial-img flex-shrink-0" alt="">
-                          <div>
-                            <h3>Imran Sable</h3>
-                            <h4>founder &amp; CEO</h4>
-                            <div class="stars">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <p>
-                          <i class="bi bi-quote quote-icon-left"></i>
-                          <span>Imran Sable is a key founder and CEO of CypherSOL Fintech Private Ltd. He has hands on experience of over 22 + years in Sales & Marketing in lending and Insurance products.</span>
-                          <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                      </div>
-                    </div><!-- End testimonial item -->
-    
-                    <div class="swiper-slide">
-                      <div class="testimonial-item">
-                        <div class="d-flex">
-                          <img src="assets/img/testimonials/Shamlata.jpg" class="testimonial-img flex-shrink-0" alt="">
-                          <div>
-                            <h3>Shamlata Poojary</h3>
-                            <h4>MD & CTO and a key founding member</h4>
-                            <div class="stars">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <p>
-                          <i class="bi bi-quote quote-icon-left"></i>
-                          <span> Shamlata Poojary is MD & CTO and a key founding member of CypherSOL Fintech Private Ltd. She has wide experience in the field of finance, banking, and technology.</span>
-                          <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                      </div>
-                    </div><!-- End testimonial item -->
-    
-                    <div class="swiper-slide">
-                      <div class="testimonial-item">
-                        <div class="d-flex">
-                          <img src="assets/img/testimonials/Samidha.jpg" class="testimonial-img flex-shrink-0" alt="">
-                          <div>
-                            <h3>Samidha Devkar</h3>
-                            <h4>COO and a key founder</h4>
-                            <div class="stars">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <p>
-                          <i class="bi bi-quote quote-icon-left"></i>
-                          <span>Samidha Devkar is COO and a key founder of CypherSOL Fintech Private Ltd. She has over 17 years’ experience in Sales & Operations with domain expertise in lending business and insurance products. </span>
-                          <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                      </div>
-                    </div><!-- End testimonial item -->
-    
-                    <div class="swiper-slide">
-                      <div class="testimonial-item">
-                        <div class="d-flex">
-                          <img src="assets/img/testimonials/Deepak.jpg" class="testimonial-img flex-shrink-0" alt="">
-                          <div>
-                            <h3>Deepak Singhania</h3>
-                            <h4>Cofounder and CFO</h4>
-                            <div class="stars">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <p>
-                          <i class="bi bi-quote quote-icon-left"></i>
-                          <span>Deepak Singhania a cofounder and CFO of CypherSOL Fintech Private Ltd is a Chartered Accountant (rank holder) and Chartered Financial Aanalyst (US or Hyderabad based??).</span>
-                          <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                      </div>
-                    </div><!-- End testimonial item -->
-    
-                    <div class="swiper-slide">
-                      <div class="testimonial-item">
-                        <div class="d-flex">
-                          <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
-                          <div>
-                            <h3>Tabassum Inamdar</h3>
-                            <h4>Shareholder and Board Advisor</h4>
-                            <div class="stars">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <p>
-                          <i class="bi bi-quote quote-icon-left"></i>
-                          <span>Tabassum Inamdar is a shareholder and Board Advisor at CypherSOL Private Ltd. Tabassum is a long-time analyst of the BFSI sector in India and Asia.</span>
-                          <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                      </div>
-                    </div><!-- End testimonial item -->
-    
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-    
-              </div>
-    
-            </div>
-    
-          </div>
-    
-        </section><!-- End Testimonials Section -->
 
-    
-    <div class="page-header d-flex align-items-center">
-      <div class="container position-relative">
-        <div class="d-flex justify-content-center">
-          <div class="col-lg-10 text-center">
-            <h2>Team Members</h2>
+      <div class="container">
 
-          </div>
-        </div>
-      </div>
-    </div><!-- End Page Header -->
+        <div class="row gy-5" style="margin-top: 5px;">
 
-    <section id="team-member" class="team-member">
-
-      <!--  Section Title -->
-      
-
-      <div class="container mt-4">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-4 col-md-6 member-team" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
             <div class="card">
-            <div class="member-img-team">
+            <div class="member-img mt-4">
               <img src="assets/img/testimonials/Imran.jpg" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
@@ -337,21 +180,18 @@
                 <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-            <div class="member-info-team text-center">
+            <div class="member-info text-center" style="margin-bottom: 10px;">
               <h4>Imran Sable</h4>
               <span>Chief Executive Officer</span>
-              <p class="fst-italic py-1">
-                Imran Sable is a key founder and CEO of CypherSOL Fintech Private Ltd. He has hands on experience of over 22 + years in Sales & Marketing in lending and Insurance products.
-                His entrepreneurial skill is reflected in organizations he has established and has been associated with. He formed Creative Finserv in ------ a Direct Selling Agency which works closely with xxxx banks and NBFCs and Bizpedia a market place for referral partner focused on financial services in particular lending and insurance products.
-                He was Director (as in board member or title Director??) at Globe Secure - 2016 – 17, a leading Cyber Security Partner in India and was responsible for setting up the Company at the initial stage. Imran has been actively involved in the social space and was Ex-Chartered President & District Chairman at LION’s Club. 
-              </p>
+              <p>Imran Sable is a key founder and CEO of CypherSOL Fintech Private Ltd. He has hands on experience of over 22 + years in Sales & Marketing in lending and Insurance products. </p>
+              <!-- <a href="#" class="team-read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
             </div>
           </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-4 col-md-6 member-team" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
             <div class="card">
-            <div class="member-img-team">
+            <div class="member-img mt-4">
               <img src="assets/img/testimonials/Shamlata.jpg" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
@@ -360,19 +200,17 @@
                 <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-            <div class="member-info-team text-center">
+            <div class="member-info text-center" style="margin-bottom: 50px;">
               <h4>Shamlata Poojary</h4>
-              <span>MD & CTO </span>
-              <p class="fst-italic py-1 mb-2">
-                Shamlata Poojary is MD & CTO and a key founding member of CypherSOL Fintech Private Ltd. She has wide experience in the field of finance, banking, and technology. She has worked at prominent organizations such as HDFC Bank Ltd, Kotak Mahindra Bank Ltd, and Aditya Birla Capital Ltd. Shamlata is qualified MBA in Finance, and a Certified Bank Accounting Professional (is this significant?). She was a Super Scorer, Advanced Program in Cyber Warfare and Defence (which agency does this?). She has 25 years of experience in Process (elaborate), Quality, Risk (elaborate), Product Development & Information Technology. She build domain expertise (elaborate) in retail liabilities at banks such as Kotak xxxxxxxxxx. She is as shareholder of Creative Finserv and cofounder of Bizpedia a market place for referral partner focused on financial services. 
-              </p>
+              <span>MD & CTO</span>
+              <p>Shamlata Poojary is MD & CTO and a key founding member of CypherSOL Fintech Private Ltd. She has wide experience in the field of finance, banking, and technology. </p>
             </div>
           </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-4 col-md-6 member-team" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="card">
-            <div class="member-img-team">
+            <div class="member-img mt-4">
               <img src="assets/img/testimonials/Samidha.jpg" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
@@ -381,19 +219,17 @@
                 <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-            <div class="member-info-team text-center">
+            <div class="member-info text-center" style="margin-bottom: 30px;">
               <h4>Samidha Devkar</h4>
               <span>COO</span>
-              <p class="fst-italic py-1" style="margin-bottom: 45px;">
-                Samidha Devkar is COO and a key founder of CypherSOL Fintech Private Ltd. She has over 17 years’ experience in Sales & Operations with domain expertise in lending business and insurance products. She has played a pivotal role in forging alliances with banks and NBFCs.  She is a key shareholder in Creative Finserv, a Direct Selling Agency which works closely with xxxx banks and NBFCs and a co-founder of Bizpedia a market place for referral partner focused on financial services. Her hard work and collaborative abilities is reflected in awards and recognition received: selected a star performer multiple times by large organizations like Bajaj Life Insurance, Prerna Award for Women Entrepreneur and Best Customer Centricity in BFSI from Yashasv (are these big names???)i. 
-              </p>
+              <p>Samidha Devkar is COO and a key founder of CypherSOL Fintech Private Ltd. She has over 17 years’ experience in Sales & Operations with domain expertise in lending business and insurance products. </p>
             </div>
           </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-4 col-md-6 member-team" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
             <div class="card">
-            <div class="member-img-team">
+            <div class="member-img mt-4">
               <img src="assets/img/testimonials/Deepak.jpg" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
@@ -402,20 +238,18 @@
                 <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-            <div class="member-info-team text-center">
+            <div class="member-info text-center" style="margin-bottom: 50px;">
               <h4>Deepak Singhania</h4>
-              <span>CFO </span>
-              <p class="fst-italic py-1" style="margin-bottom: 180px;">
-                Deepak Singhania a cofounder and CFO of CypherSOL Fintech Private Ltd is a Chartered Accountant (rank holder) and Chartered Financial Aanalyst (US or Hyderabad based??).  He has over 6 years’ experience as practicing Chartered Accountant at his firm Deepak Singhania & Associates. The firm specializes in audits (150+ clients), tax consultation (1000+ returns filed annually), GST returns filing (200+ clients), and serving more than 75 mid and small size corporates.  He also worked briefly as an Equity Analyst covering BFSI at Ventura Securities.  He is currently a Trustee of a non-profit, Social Organization Upon Life which provides economic and medical assistance to marginalized sections of society.
-              </p>
+              <span>Cofounder and CFO </span>
+              <p>Deepak Singhania a cofounder and CFO of CypherSOL Fintech Private Ltd is a Chartered Accountant (rank holder) and Chartered Financial Aanalyst (US or Hyderabad based??).  </p>
             </div>
           </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-4 col-md-6 member-team" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
             <div class="card">
-            <div class="member-img-team">
-              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+            <div class="member-img mt-4">
+              <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -423,12 +257,10 @@
                 <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-            <div class="member-info-team text-center">
+            <div class="member-info text-center" style="margin-bottom: 40px;">
               <h4>Tabassum Inamdar</h4>
-              <span>shareholder and Board Advisor</span>
-              <p class="fst-italic py-1">
-                Tabassum Inamdar is a shareholder and Board Advisor at CypherSOL Private Ltd. Tabassum is a long-time analyst of the BFSI sector in India and Asia. Tabassum’s passion for BFSI research spans more than 25 years, having honed her domain expertise at several leading research houses including: Goldman Sachs - Managing Director (co-head, India Research and co-head, Asian financials), UBS Securities as Director (BFSI Research), Kotak Securities (Sr. Equity Analyst – BFSI).  She is currently serving as an Independent Director on the following boards:  Franklin Templeton AMC India (since December 2019), Indifi Technologies Pvt Ltd (since May 2022). Indifi Capital, and UGro Capital. She is also a board member of a US based non-profit organization Pure Earth Blacksmith Institute, that is focused on resolving the lead poisoning issue amongst children in India.  Prior to that, she served as an Independent Director on the board of Equitas Small Finance Bank (October 2016 to October 2021) and Zipsure (October 2018 to March 2020) - a new general insurance start-up.  In 2019, she set up Tameel (https://tameel.in/), a research initiative focused on impact strategy research and has published three reports deconstructing CSR in India.
-              </p>
+              <span>Shareholder and Board Advisor </span>
+              <p>Tabassum Inamdar is a shareholder and Board Advisor at CypherSOL Private Ltd. Tabassum is a long-time analyst of the BFSI sector in India and Asia. </p>
             </div>
           </div>
           </div><!-- End Team Member -->
@@ -437,7 +269,8 @@
 
       </div>
 
-    </section>
+    </section><!-- End Team Section -->
+
 
     <div class="text-center">
 

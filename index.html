@@ -23,11 +23,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <!-- Google Fonts -->
+
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  
+  
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/mobile.css" rel="stylesheet">
   <style>
     @media (max-width: 768px) {
       .login-button {
@@ -98,7 +107,7 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto" href="index.html"><b>Home</b></a></li>
+            <li><a class="nav-link scrollto active" href="index.html"><b>Home</b></a></li>
             <li><a class="nav-link scrollto" href="team.html"><b>Team</b></a></li>
             <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
@@ -120,7 +129,7 @@
                 <li><a href="#Login">Financier</a></li>
               </ul>
             </li>
-            <li><a class="nav-link scrollto active" href="contact.html"><b>Contact</b></a></li>
+            <li><a class="nav-link scrollto" href="contact.html"><b>Contact</b></a></li>
           </ul>
           <!-- <button type="button" class="btn btn-primary btn-sm" style="width:100px;height:50px">Login</button> -->
         </nav><!-- .navbar -->
@@ -130,10 +139,13 @@
             <b>Login</b>
           </button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="{% url 'login' %}">Login As Tax Professionals</a>
-            <a class="dropdown-item" href="{% url 'DSA_login' %}">Login As DSA</a>
+            <a class="dropdown-item" href="{% url 'login' %}">Login Tax Professionals</a>
+            <a class="dropdown-item" href="{% url 'DSA_login' %}">Login DSA</a>
           </div>
         </div>
+
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 
 
       </div>
@@ -1006,13 +1018,15 @@
   </div>
   <!-- End Video Popup -->
       <!-- Scripts -->
-      <script src="/static/static/new/css/js/vendor/jauery-1.12.4.min.js"></script>
-      <script src="/static/static/new/css/js/vendor/moderniz-3.5.0.min.js"></script>
-      <script src="/static/static/new/css/js/vendor/"></script>
-      <script src="/static/static/new/css/js/tamijd-counter.min.js"></script>
-      <script src="/static/static/new/css/js/owlcarousel.min.js"></script>
-      <script src="/static/static/new/css/js/mailchimp.min.js"></script>
-      <script src="/static/static/new/css/js/main.js"></script>
+       <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
