@@ -103,6 +103,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
+   * Frequently Asked Questions Toggle
+   */
+  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
+    faqItem.addEventListener('click', () => {
+      faqItem.parentNode.classList.toggle('faq-active');
+    });
+  });
+
+  /**
    * Init swiper slider with 1 slide at once in desktop view
    */
   new Swiper('.slides-1', {
